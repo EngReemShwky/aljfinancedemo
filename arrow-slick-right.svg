@@ -1,0 +1,19 @@
+<svg width="53" height="57" viewBox="0 0 53 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 376">
+<g id="Group 16191">
+<line id="Line 14" y1="-0.8" x2="45" y2="-0.8" transform="matrix(-4.37114e-08 1 1 4.37114e-08 27.2002 4.5)" stroke="url(#paint0_linear_1364_830)" stroke-width="1.6"/>
+<g id="ð¦ icon &quot;Caret Down&quot;">
+<path id="Vector" d="M26.8259 36.2753C26.8259 35.1252 26.8521 21.8334 26.8259 19.6506C26.7998 17.4678 26.7998 16.5776 28.4382 18.7396C30.0766 20.9015 34.5232 27.0487 34.5232 27.0487C34.892 27.5526 34.892 28.3732 34.5232 28.8772L28.4382 37.1863C26.4635 40.4675 26.8259 37.4253 26.8259 36.2753Z" fill="#8C5BA5"/>
+</g>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_1364_830" x1="45" y1="0" x2="0.320663" y2="-1.81421e-07" gradientUnits="userSpaceOnUse">
+<stop stop-color="#9747FF" stop-opacity="0"/>
+<stop offset="0.203125" stop-color="#8C5BA5"/>
+<stop offset="0.505208" stop-color="#8C5BA5"/>
+<stop offset="0.802083" stop-color="#8C5BA5"/>
+<stop offset="1" stop-color="#9747FF" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
