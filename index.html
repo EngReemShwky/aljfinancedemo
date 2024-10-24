@@ -76,7 +76,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">News</a>
+                        <a class="nav-link" href="news.html">News</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact us</a>
@@ -95,7 +95,7 @@
         <div>
         <div class="overlay-hero-section"></div>
         <div class="triangle-up">
-           <a href="#discover"> <div class="discover-more next-section">Discover more</div> </a>
+           <a href="#discover" id="discover"> <div class="discover-more next-section">Discover more</div> </a>
         </div>
         <div class="container container-word" style="top: 228.5px;">
         <div class="row">
@@ -211,7 +211,7 @@
                         </div>
                         <div class="col-md-6 ">
                             <div class="item">
-                                <div class="img-content"><img src="img/photos-02.png" /></div>
+                            <div class="img-content"><img src="img/photos-02.png" /></div>
                             <div class="content">
                                 <h3>New financial literacy campaign launched in Egypt to help empower customers</h3>
                                 <p>Jameel Finance Egypt has announced the launch of a new financial literacy campaign to help empower customers with ways in which they can enhance their quality of life and survive financially difficult times.</p>
@@ -329,17 +329,17 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about-us.html">About us</a></li>
-                    <li><a href="#">Contact Form</a></li>
-                    <li><a href="#">Schedule of charges</a></li>
+                    <li><a href="https://www.jameelfinance.com.eg/contact-us">Contact Us</a></li>
+                    <li><a href="​https://www.jameelfinance.com.eg/schedule-of-charges">Schedule of charges</a></li>
                     <li><a href="#">Articles</a></li>
-                    <li><a href="#">FAQs</a></li>
+                    <li><a href="https://www.jameelfinance.com.eg/FAQ">FAQs</a></li>
                 </ul>
             </div>
             <div class="col-md-4">
                 <h2 class="title-h2">Policies & Support</h2>
                 <ul>
                     <li><a href="#">Copyrights & Disclaimers</a></li>
-                    <li><a href="#">Terms & conditions</a></li>
+                    <li><a href="https://www.jameelfinance.com.eg/terms-conditions">Terms & conditions</a></li>
                     <li><a href="#">Terms of usage</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Cookies Policy</a></li>
@@ -400,14 +400,16 @@
 <script src="js/owl.carousel.js"></script>
 <script>
 
-$(document).on("click","a",function(e){
-        e.preventDefault();
-        var id = $(this).attr("href"),
-            topSpace = 30;
-        $('html, body').animate({
+$(document).ready(function() {
+$("#discover").on("click","a",function(e){
+    e.preventDefault();
+    var id = $(this).attr("href"),
+        topSpace = 30;
+    $('html, body').animate({
           scrollTop: $(id).offset().top - topSpace
-        }, 800);
-    });
+    }, 800);
+});
+});
 
 
     $(document).ready(function() {
