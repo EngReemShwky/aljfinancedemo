@@ -86,6 +86,9 @@ width: 170px;
     color:#1ccfd8; 
     /* border-bottom: solid 2px #1ccfd8; */
 }
+.navbar-light .navbar-nav .show > .nav-link{
+  color:#e0e721; 
+}
 .navbar-light .navbar-nav .active > .nav-link::after{
   content:"";
   color:#1ccfd8; 
@@ -246,17 +249,18 @@ footer .container{
   padding: 40px 0px 0px;
 }
 footer .logo{
-  width: 300px;
+  width: 100%;
   text-align: center;
 }
 footer p{
   color:#617798;
   margin-top: 30px;
   text-align: justify;
+  line-height: 26px;
 }
-footer  .title-h2{
-  color: #510c76;
-  font-size: 16px;
+footer .title-h2{
+  color: #fe5000;
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -270,6 +274,23 @@ footer ul, footer .list-1 {
 }
 footer ul li , footer .list-1 li{
   margin-bottom: 12px;
+}
+footer ul li a{
+  padding: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  margin-bottom: 15px;
+  transition: all ease-in-out 0.3s;
+  text-decoration: none;
+  position: relative;
+  padding-left: 0px;
+  color: #000;
+}
+footer ul li a:hover{
+  color:#fe5000;
+  padding-left: 20px;
 }
 footer .list-1 li a{
   padding: 0;
@@ -337,6 +358,32 @@ footer .list-1 li a:hover::after{
   transition: all ease-in-out 0.4s;
   line-height: 34px;
 }
+@media screen and (min-width: 992px) {
+  
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  footer .first-app{
+    display: block !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer .first-app{
+    display: block !important;
+  }
+}
+@media screen and (max-width: 575px) {
+  footer .first-app{
+    display: block !important;
+  }
+}
+@media screen and (max-width: 580px) {
+  footer .first-app{
+    display: block !important;
+  }
+}
 
 @media (max-width: 767px) {
   .services .box .financial-services-title {
@@ -347,7 +394,7 @@ footer .list-1 li a:hover::after{
 .services .box {
   position: relative;
   overflow: hidden;
-  width: fit-content;
+  width:100%;
   transition: all ease-in-out 0.4s;
   border-radius: 32px;
   margin-bottom: 24px
@@ -429,7 +476,7 @@ footer .list-1 li a:hover::after{
 .services .box img{
   width: 100%;
   object-fit: cover;
-  height: 400px;
+  height: 300px;
 }
 
 .services .box .content-box .field--name-field-cta a {
@@ -437,7 +484,7 @@ footer .list-1 li a:hover::after{
   transition: all ease-in-out 0.4s;
   border: 1px solid #fff;
   border-radius: 48px;
-  padding: 15px 50px 10px 15px;
+  padding: 10px 50px 6px 15px;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -507,7 +554,11 @@ footer .list-1 li a:hover::after{
 .ads{
   width: 100%;
 }
-
+.ads .owl-carousel .owl-item img
+{
+  height: 490px;
+  object-fit: cover;
+}
 .ads .owl-dots{
   position: relative;
   width: 36px;
@@ -712,6 +763,8 @@ footer .list-1 li a:hover::after{
   font-weight: 800;
   line-height: 32px;
   transition: all 0.5s;
+  margin-bottom: 40px;
+  display: block;
 }
 .articles .content a:hover{
   color:#fe5000;
@@ -838,12 +891,13 @@ font-weight: normal;
   margin-top: -16px;
 }
 .apps video{
-  width: 95%;
-  margin-top: -100px;
+  width: 100%;
+  margin-top: 50px;
   border:1px solid #885ab8;
   background-color: #FFF;
   padding: 10px;
   border-radius: 25px;
+  height: auto !important;
 }
 .apps .col-md-7 , .apps .col-lg-7{
   text-align: right;
@@ -901,10 +955,10 @@ margin-bottom: -45px;
 .apps .qr-code img {
   border-radius: 20px;
   background-color: #000;
-  width: 130px;
+  width: 90px;
   border: 1px solid #FFF;
   margin-bottom: 10px;
-  padding: 4px;
+  padding: 2px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1175,9 +1229,13 @@ footer .social-icons li{
   margin-bottom: 0px;
 }
 footer .social-icons a {
-  padding: 15.5px 12px;
+  padding: 15.5px 12px !important;
   transition: all ease-in-out 0.4s;
   border-radius: 10px;
+  border: 1px solid #e3e3e3;
+}
+footer .social-icons a:hover {
+  padding: 15.5px 12px !important;
 }
 footer .social-icons a img {
   width: 25px;
@@ -1197,6 +1255,10 @@ footer .mail{
   line-height: normal;
   margin: 5px 0px 10px;
   padding: 0px;
+  display: inline-block;
+}
+footer .mail:nth-child(2){
+  padding-left: 20px;
 }
 footer .mail a{
   color: #4a585f;
@@ -1208,8 +1270,10 @@ footer .mail img{
 }
 
 footer .middel{
+  /*
   border-right: 1px solid #b0b0b2;
   border-left: 1px solid #b0b0b2;
+  */
 }
 footer .download-app{
   display: flex;
@@ -1219,12 +1283,12 @@ footer .first-app{
   align-items: flex-end;
 }
 footer .first-app img{
-  border:1px solid #fe5000;
+  border:1px solid #5b5b5b;
   padding: 2px;
   border-radius: 5px;
 }
 footer .first-app:first-child img{
-  border:1px solid #e0e721;
+  border:1px solid #5b5b5b;
   padding: 2px;
   border-radius: 5px;
 }
@@ -1748,6 +1812,8 @@ footer .first-app p{
   padding: 0px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  z-index: 99999999;
+  border-bottom: 1px solid #510c76;
 }
 
 /* The navigation menu links */
@@ -1755,10 +1821,10 @@ footer .first-app p{
   padding: 8px 8px 8px 8px;
   text-decoration: none;
   font-size: 25px;
-  color: #510c76;
+  color: #FFF;
   display: block;
   transition: 0.3s;
-  background-color: #e4caff;
+  background-color: #510c76;
   text-align: center;
   width: 30px;
   display: block;
@@ -1777,8 +1843,19 @@ footer .first-app p{
   right: 35px;
   font-size: 36px;
   margin-right: 50px;
+  height: 50px;
+  width: 50px;
+  border-radius: 45%;
+  line-height: 43px;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transition: all 0.3s linear;
 }
-
+.sidenav .closebtn:hover {
+  transition: all 0.3s linear;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg)
+}
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s;
@@ -1958,17 +2035,58 @@ figure img{
 }
 .works .content::before {
   transition: all ease-in-out 0.3s;
-  content: url("../img/financial-services.svg");
+  content: "";
+  background-image: url("../img/financial-services.svg");
   position: absolute;
   z-index: 1;
   bottom: -15px;
   scale: 1.1;
   border-radius: 32px;
+  width: 40px;
+  height: 40px;
+}
+.works .content h3{
+color:#510c76;
+transition: all 0.3s ease-in-out 0.1s;
 }
 
 .works .content:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
+
+.works .content:hover h3{
+color:#fe5000;
+}
+.works .content a{
+  display: block;
+  border-bottom:0px solid #fe5000;
+  display: inline-block;
+}
+.works .content a::after {
+content: url("../img/arrow-right-bold-blue.svg");
+margin-left: 5px;
+margin-bottom: -15px;
+display: inline-block;
+opacity: 0;
+transition: all .5s ease-in-out;
+}
+.works .content p{
+  text-align: justify;
+  font-size: 20px;
+}
+.works .content a{
+  border-bottom:1px solid #fe5000;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.works .content a:hover::after{
+  opacity: 1;
+  margin-left: 20px;
+  
+}
+
 
 
 /* Zoom In #1 */
