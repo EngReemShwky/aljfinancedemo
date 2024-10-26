@@ -25,8 +25,8 @@
                 <div class="row justify-content-center">
                     <div class="col-md-6">
                         <div class="search">
-                            <input placeholder="ما الذي تبحث عنه؟"  type="text" value="" size="30" maxlength="128" class="txt-search" />
-                            <input type="submit" class="form-submit" value="" />  
+                            <input placeholder="ما الذي تبحث عنه؟"  type="text" value="" size="30" maxlength="128" class="txt-search wow slideInRight" data-wow-duration="2s" data-wow-offset="0" />
+                            <input type="submit" class="form-submit wow slideInLeft" value="" data-wow-duration="2s" data-wow-offset="0" />
                         </div>
                     </div>
                 </div>
@@ -42,11 +42,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link lang" href="index-ar.html" style="margin-top: -2px;"> <img src="img/language.svg" /> Ar </a>
-                        </li>
-    
-                        <li class="nav-item">
                             <a class="nav-link lang" onclick="openNav()"> <img src="img/search.svg" style="width: 20px !important; margin-right: 0px;" /></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link lang" href="index.html" style="margin-top: -2px;"> <img src="img/language.svg" /> En </a>
                         </li>
                     </ul>
     
@@ -55,32 +54,75 @@
                      <!-- END SEARCH -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                          <a class="nav-link" href="index.html">الرئيسية</a>
+                          <a class="nav-link" href="index-ar.html">الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="about-us.html">عن الشركة</a>
+                          <a class="nav-link" href="about-us-ar.html">عن الشركة</a>
                         </li>
                         
                         <li class="nav-item dropdown" id="myDropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">  المنتجات التمويلية  </a>
                             <ul class="dropdown-menu">
-                              <li> <a class="dropdown-item" href="#"> المنتجات التمويلية  </a>
+                              <li> <a class="dropdown-item" href="#">  السيارات  </a>
                                 <ul class="submenu dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">سيارات جديدة</a></li>
-                                  <li><a class="dropdown-item" href="#">سيارات مستعملة</a></li>
-                                  <li><a class="dropdown-item" href="#">Electric Cars </a></li>
+                                  <li><a class="dropdown-item" href="#">السيارات الجديدة</a></li>
+                                  <li><a class="dropdown-item" href="#">السيارات المستعملة</a></li>
+                                  <li><a class="dropdown-item" href="#">السيارات الفاخرة</a></li>
+                                  <li><a class="dropdown-item" href="#">السيارات الكهربائية</a></li>
+                                  <li><a class="dropdown-item" href="#">الموديلات القديمة</a></li>
                                 </ul>
                               </li>
-                              <li><a class="dropdown-item" href="#"> التأمين على السيارات  </a></li>
-                              <li><a class="dropdown-item" href="#"> صيانة السيارات  </a></li>
-                              <li><a class="dropdown-item" href="#"> قطع غيار السيارات  </a></li>
+                              <li><a class="dropdown-item" href="#">الدراجات النارية</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">الدراجات النارية</a></li>
+                                    <li><a class="dropdown-item" href="#">السكوترات</a></li>
+                                    <li><a class="dropdown-item" href="#">الدراجات الكهربائية</a></li>
+                                    <li><a class="dropdown-item" href="#">عربات الجولف</a></li>
+                                    <li><a class="dropdown-item" href="#">عربات الشاطئ</a></li>
+                                </ul>
+                              </li>
+                              <li><a class="dropdown-item" href="#">القوارب</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">القوارب</a></li>
+                                    <li><a class="dropdown-item" href="#">جت سكي</a></li>
+                                </ul>
+                              </li>
+                              <li><a class="dropdown-item" href="#">الصيانة، قطع الغيار والإكسسوارات</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">السيارات</a></li>
+                                    <li><a class="dropdown-item" href="#">الدراجات النارية</a></li>
+                                    <li><a class="dropdown-item" href="#">القوارب</a></li>
+                                  </ul>
+                              </li>
+                              <li><a class="dropdown-item" href="#">التأمين</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">تأمين السيارات</a></li>
+                                    <li><a class="dropdown-item" href="#">تأمين الدراجات النارية</a></li>
+                                    <li><a class="dropdown-item" href="#">تأمين السكوترات</a></li>
+                                    <li><a class="dropdown-item" href="#">تأمين القوارب</a></li>
+                                  </ul>
+                              </li>
+                              <li><a class="dropdown-item" href="#">الأجهزة والإلكترونيات</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">الهواتف المحمولة والأجهزة اللوحية</a></li>
+                                    <li><a class="dropdown-item" href="#">أجهزة الكمبيوتر المحمولة</a></li>
+                                    <li><a class="dropdown-item" href="#">الأجهزة المنزلية</a></li>
+                                    <li><a class="dropdown-item" href="#">الأجهزة والبرامج الترفيهية</a></li>
+                                  </ul>
+                              </li>
+                              <li><a class="dropdown-item" href="#">الأثاث</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">الأثاث الداخلي</a></li>
+                                    <li><a class="dropdown-item" href="#">الأثاث الخارجي</a></li>
+                                  </ul>
+                              </li>
                             </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="news-ar.html">الاخبار</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">للتواصل معنا</a>
+                            <a class="nav-link" href="#">اتصل بنا</a>
                         </li>
                     </ul>
                       
@@ -98,12 +140,13 @@
         <div class="triangle-up">
             <a href="#discover" id="discover"> <div class="discover-more next-section">استكشف اكثر</div> </a>
         </div>
-        <div class="container container-word" style="top: 228.5px;">
-            <h2 style="font-size: 32px; line-height: 38px;"><span style="font-size:21px;">جميل للتمويل</span></h2>
-            
-            <h1 style="font-size: 36px; line-height: 42px;"><strong>نساعدك في تحويل الأفكار إلى إنجازات</strong></h1>
-            <p><span style="font-size:21px;">.نوفر مجموعة من الحلول المبتكرة تناسب الجميع </span></p>
-            
+        <div class="container-word" style="top: 228.5px;">
+            <div class="container">
+                <h2 style="font-size: 32px; line-height: 38px;"><span style="font-size:21px;">جميل للتمويل</span></h2>
+                
+                <h1 style="font-size: 36px; line-height: 42px;"><strong>نساعدك في تحويل الأفكار إلى إنجازات</strong></h1>
+                <p><span style="font-size:21px;">.نوفر مجموعة من الحلول المبتكرة تناسب الجميع </span></p>
+            </div>
         </div>
             
         </div>
@@ -283,8 +326,8 @@
             <div class="col-lg-4 col-md-4">
                 <div class="qr-code ">
                         <div class="field--name-field-qr-code">
-                            <img src="img/app-store.svg"    alt="image" />
-                            <img src="img/play-store.svg"   alt="image" />
+                            <img src="img/Jameel Finance_qrcode.svg"    alt="image" />
+                            <img src="img/Jameel Finance_qrcode.svg"   alt="image" />
                         </div>  
                 </div>
                     
@@ -359,7 +402,7 @@
                     <ul >
                         <li><a href="index-ar.html">الرئيسية</a></li>
                         <li><a href="about-us-ar.html">عن الشركة</a></li>
-                        <li><a href="https://www.jameelfinance.com.eg/contact-us">للتواصل معنا</a></li>
+                        <li><a href="https://www.jameelfinance.com.eg/contact-us">اتصل بنا</a></li>
                         <li><a href="​https://www.jameelfinance.com.eg/schedule-of-charges">جدول الرسوم</a></li>
                         <li><a href="news-ar.html">المقالات</a></li>
                         <li><a href="https://www.jameelfinance.com.eg/FAQ">الأسئلة الشائعة</a></li>
@@ -388,6 +431,7 @@
             <div class="row footer-copyright">
                 <div class="col-md-4">
                     <p class="mail"><a href="tel:16158" ><img src="img/phone.svg" />  16158</a></p>
+                <p class="mail"> <a href="mailto:info@aljfinance.com.eg"><img src="img/mail.svg" /> info@aljfinance.com.eg</a></p>
                 </div>
                 <div class="col-md-4 middel">
                     <div class="social-icons">
@@ -396,7 +440,7 @@
                             <li><a href="https://www.linkedin.com/company/jameelfinance/"  target="_blank"><img src="img/youtube.svg" /></a></li>
                             <li><a href="https://www.instagram.com/aljfeg/"  target="_blank"><img src="img/instagram.svg" /></a></li>
                             <li><a href="https://www.linkedin.com/company/jameelfinance/"  target="_blank"><img src="img/linkedin.svg" /></a></li>
-                           
+                            <li><a href="https://www.tiktok.com/@aljfeg"><img src="img/tiktok.svg" /></a></li>
                         </ul>
                     </div>
                 </div>
