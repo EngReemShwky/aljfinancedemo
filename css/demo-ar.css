@@ -490,7 +490,7 @@ footer .list-1 li a:hover::after{
   transition: all ease-in-out 0.4s;
   border: 1px solid #fff;
   border-radius: 48px;
-  padding: 10px 15px 6px 50px;
+  padding: 14px 15px 8px 50px;
   color: #fff;
   text-decoration: none;
   font-weight: bold;
@@ -506,7 +506,7 @@ footer .list-1 li a:hover::after{
   width: 20px;
   height: 25px;
   left: 15px;
-  top: 10px;
+  top: 14px;
 }
 
 .services .box .content-box .field--name-field-cta a:hover {
@@ -614,15 +614,30 @@ footer .list-1 li a:hover::after{
   font-family: 'luma';
 }
 
-.ads .owl-carousel .owl-dot:first-child span::after{
+.ads .owl-carousel .owl-dot:nth-child(1) span::after{
   content: "1";
   position: relative;
   width: 100px;
   height: 100px;
   color:#510c76;
 }
-.ads .owl-carousel .owl-dot:last-child span::after{
+.ads .owl-carousel .owl-dot:nth-child(2) span::after{
   content: "2";
+  position: relative;
+  width: 100px;
+  height: 100px;
+  color:#510c76;
+}
+
+.ads .owl-carousel .owl-dot:nth-child(3) span::after{
+  content: "3";
+  position: relative;
+  width: 100px;
+  height: 100px;
+  color:#510c76;
+}
+.ads .owl-carousel .owl-dot:nth-child(4) span::after{
+  content: "4";
   position: relative;
   width: 100px;
   height: 100px;
