@@ -1366,6 +1366,11 @@ footer .middel{
   display: block;
   margin: auto;
 }
+.about-1  .img-banner-service{
+  width: 80%;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
 .about-services{
   position: relative;
   padding: 60px 0px 40px;
@@ -2480,7 +2485,7 @@ box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.05);
 font-size: 22px;
 font-weight: 700;
 padding-bottom: 35px;
-color: var(--black-color);
+color: #000;
 }
 
 .in-sidebar-widget .widget-title:before {
@@ -2755,4 +2760,63 @@ margin-top: 30px;
 margin-bottom: 50px;
 font-weight: 500;
 }
-    
+
+
+.features{
+  text-align: center;
+  padding-top: 50px;
+}
+.features .item{
+  text-align: center;
+margin-bottom: 30px;
+border-radius: 8px;
+background-color: #f9f9f9;
+padding: 30px 31px 20px;
+-webkit-transition: 500ms all ease;
+  transition: 500ms all ease;
+  margin: 1%;
+}
+
+.features .item:hover{
+  margin-top: -40px;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+}
+.features .item p{
+  margin-bottom: 0px;
+  
+}
+
+
+.hot-offers .head h5{
+  color:#FFF;
+  background: -webkit-gradient(linear, left top, right top, from(#510c76), color-stop(50%, #7a12b2), to(#510c76));
+  background: linear-gradient(90deg, #510c76 0%, #7a12b2 50%, #510c76);
+  width: 140px;
+  display: block;
+  padding: 13px 20px 7px;
+  border-radius: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 60px;
+}
+.hot-offers h2{
+  font-size: 42px;
+  font-weight: 700;
+  padding-top: 20px;
+  line-height: 1.238;
+  color: #000;
+}
+.hot-offers p{
+  color: #888;
+  font-size: 19px;
+  padding-top: 70px;
+  width: 80%;
+  text-align: justify;
+  margin: auto;
+    margin-right: auto;
+  margin-right: 0px;
+}
+.owl-offers .owl-nav{
+  display: none !important;
+}
