@@ -579,7 +579,7 @@ footer .list-1 li a:hover::after{
 
 .ads .owl-carousel .owl-item img
 {
-  height: 490px;
+ /* height: 490px; */
   object-fit: cover;
 }
 .ads .owl-dots{
@@ -2408,7 +2408,8 @@ background-size: 200%, 1px;
         text-indent: 200%;
         white-space: nowrap;
         font-size: 0;
-        opacity: 0; }
+        opacity: 0;
+       }
 
         .breadcrumb {
 background-color: transparent;
@@ -2821,6 +2822,7 @@ padding: 30px 31px 20px;
   padding-top: 20px;
   line-height: 1.238;
   color: #000;
+  text-align: center;
 }
 .hot-offers p{
   color: #888;
